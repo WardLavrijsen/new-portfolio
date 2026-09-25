@@ -78,6 +78,24 @@ export const projects: Array<Project> = [
     ],
   },
   {
+    title: 'Konings Huifkarverhuur',
+    description: 'Covered wagon rides with online booking requests',
+    href: '/projects/konings-huifkarverhuur',
+    liveUrl: 'https://koningshuifkarverhuur.nl',
+    slug: 'konings-huifkarverhuur',
+    image: '/portfolio/konings-huifkarverhuur.png',
+    alt: 'Konings Huifkarverhuur website with a tractor and covered wagon and an availability section',
+    overview:
+      'Konings Huifkarverhuur offers covered wagon rides with a driver for group outings, celebrations, and boerenovertrek in De Kempen. The website brings the experience, service area, availability, and booking requests together in one place.',
+    stack:
+      'Built with Next.js, React, TypeScript, and Tailwind CSS, with an availability calendar, trip pricing, and a booking-request workflow that lets the team review each ride before confirming it.',
+    highlights: [
+      'Shows date availability and pricing based on the planned trip.',
+      'Collects trip details and contact information in one booking request.',
+      'Pairs a distinctive blue-and-gold identity with photography of the tractor and covered wagon.',
+    ],
+  },
+  {
     title: 'cronhost',
     description: 'Cron job hosting and monitoring',
     href: '/projects/cronhost',
@@ -447,7 +465,7 @@ function SelectedWork() {
   return (
     <section className="section-padding bigger-container selected-work">
       <SectionHeader title="Selected work" action="View all" href="/projects" />
-      <ProjectGrid items={visibleProjects.slice(0, 2)} />
+      <ProjectGrid items={visibleProjects.slice(0, 4)} />
     </section>
   )
 }
